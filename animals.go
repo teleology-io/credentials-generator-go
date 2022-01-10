@@ -1,7 +1,7 @@
 package generator
 
 func animals() []string {
-	return []string {
+	return []string{
 		"Aardvark",
 		"Abyssinian",
 		"AdeliePenguin",
@@ -595,6 +595,6 @@ func animals() []string {
 		"ZebraShark",
 		"Zebu",
 		"Zonkey",
-		"Zorse"
+		"Zorse",
 	}
 }

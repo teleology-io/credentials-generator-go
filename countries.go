@@ -1,8 +1,7 @@
 package generator
 
-
 func countries() []string {
-	return []string {
+	return []string{
 		"Afghanistan",
 		"Albania",
 		"Algeria",
@@ -197,6 +196,6 @@ func countries() []string {
 		"Vietnam",
 		"Yemen",
 		"Zambia",
-		"Zimbabwe"
+		"Zimbabwe",
 	}
 }
