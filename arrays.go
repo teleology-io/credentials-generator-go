@@ -6,11 +6,11 @@ import (
 )
 
 func shuffle(src []string) []string {
-	dest := make([]string, len(src))
-	r := rand.New(rand.NewSource(time.Now().Unix()))
-	perm := r.Perm(len(src))
-	for i, v := range perm {
-		dest[v] = src[i]
+	dest := src
+	rand.Seed(int64(time.Now().Nanosecond()))
+	for i := len(dest) - 1; i > 0; i-- {
+		j := rand.Intn(i)
+		dest[i], dest[j] = dest[j], dest[i]
 	}
 	return dest
 }
